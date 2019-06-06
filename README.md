@@ -13,9 +13,9 @@ Repository of the digital image processing class
 ### 2. Run a test script to check if the environment is working.
 ### 3. Post a screenshot with the results.
 
-![screenshot](Screenshots/packages.png)
+<img src="screenshots/ambient.png" style=" width:100px ; height:100px " />
 
-![screenshot](Screenshots/ambient.png)
+<img src="screenshots/packages.png" style=" width:100px ; height:100px " />
 
 ### 4. Post the theme of the project you have chosen.
 
