@@ -12,7 +12,7 @@ def detect(path):
     if webcam:
         video_cap = cv2.VideoCapture(1)
     else:
-        video_cap = cv2.VideoCapture("/home/john/Downloads/john.mp4")
+        video_cap = cv2.VideoCapture("john.mp4")
     while True:
         
         ret, img = video_cap.read()
