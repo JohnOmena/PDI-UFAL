@@ -24,3 +24,18 @@ Repository of the digital image processing class
 ### 5. Post your information from github.
 
 - [x] https://github.com/JohnOmena/PDI-UFAL
+
+
+# T02 - Face detection
+
+### Detect a face in an image
+
+<img src="screenshots/woman_face_detection.png" style=" width:100px ; height:100px " />
+
+### Detect multiple faces in an image
+
+<img src="screenshots/time_face_detection.png" style=" width:100px ; height:100px " />
+
+### Detect a face on video
+
+<img src="screenshots/video_face_detection.png" style=" width:100px ; height:100px " />
