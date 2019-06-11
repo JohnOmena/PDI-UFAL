@@ -42,6 +42,6 @@ Repository of the digital image processing class
 
 # T03 - MINIST
 
-### Examples of wrong classifications
+### Examples of wrong digit classifications
 
 <img src="screenshots/digit_wrong_classification.png" style=" width:100px ; height:100px " />
