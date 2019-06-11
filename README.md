@@ -39,3 +39,9 @@ Repository of the digital image processing class
 ### Detect a face on video
 
 <img src="screenshots/video_face_detection.png" style=" width:100px ; height:100px " />
+
+# T03 - MINIST
+
+### Examples of wrong classifications
+
+<img src="screenshots/digit_wrong_classification.png" style=" width:100px ; height:100px " />
