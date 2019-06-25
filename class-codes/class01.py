@@ -11,11 +11,11 @@ import numpy as np
 import os
 
 #%% Read a grayscale image
-img = cv2.imread('/home/alunoic/PDI-UFAL/screenshots/cat.jpeg', cv2.IMREAD_GRAYSCALE)
+img = cv2.imread('/home/johnomena/Pictures/cat.jpeg', cv2.IMREAD_GRAYSCALE)
 plt.imshow(img, cmap='gray')
 #%% Load a color image
-img = cv2.imread('/home/alunoic/PDI-UFAL/screenshots/cat.jpeg', cv2.IMREAD_COLOR)
-img = cv2.cvtColor(img, cv2.IMREAD_COLOR)
+img = cv2.imread('/home/johnomena/Pictures/cat.jpeg', cv2.IMREAD_COLOR)
+img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 plt.imshow(img)
 
 #%%
@@ -29,13 +29,19 @@ plt.subplot(224), plt.title('R'), plt.imshow(rgb[2], cmap='gray')
 plt.show()
 
 #%% 
-img = cv2.imread('/home/alunoic/PDI-UFAL/screenshots/cat.jpeg', cv2.IMREAD_GRAYSCALE)
-plt.subplot(121), plt.title('Original'), plt.imshow(img, cmap='gray')
-plt.subplot(122), plt.title('Histogram'), plt.hist(img.ravel(), 256, [0, 256])
+img = cv2.imread('/home/johnomena/Pictures/cat.jpeg', cv2.IMREAD_GRAYSCALE)
+plt.subplot(321), plt.title('Original'), plt.imshow(rgb[0], cmap='gray')
+plt.subplot(322), plt.title('Histogram'), plt.hist(rgb[0].ravel(), 256, [0, 256])
+plt.subplot(323), plt.title('Original'), plt.imshow(rgb[1], cmap='gray')
+plt.subplot(324), plt.title('Histogram'), plt.hist(rgb[1].ravel(), 256, [0, 256])
+plt.subplot(325), plt.title('Original'), plt.imshow(rgb[2], cmap='gray')
+plt.subplot(326), plt.title('Histogram'), plt.hist(rgb[2].ravel(), 256, [0, 256])
+
+
 plt.show()
 
 #%%
-img = cv2.imread('/home/alunoic/PDI-UFAL/screenshots/cat.jpeg')
+img = cv2.imread('/home/johnomena/Pictures/cat.jpeg')
 color = ('b', 'g', 'r')
 for i, col in enumerate(color):
     histr = cv2.calcHist([img], [i], None, [256], [0, 256])
@@ -45,7 +51,7 @@ plt.show()
 
 #%% Creating images
 img = np.ones((50, 50), dtype=np.int8)
-plt.imshow(150*img, cmap='gray', vmin = 0, vmax = 255)
+plt.imshow(img, cmap='gray', vmin = 0, vmax = 255)
 plt.show()
 
 #%% Creating random images
@@ -75,8 +81,8 @@ cv2.randn(bgr[1], 127, 40)
 cv2.randn(bgr[2], 127, 40)
 img = cv2.merge(bgr)
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-plt.subplot(211), plt.imshow(img)
-plt.subplot(212), plt.title('Histogram'), plt.hist(img.ravel(), 256, [0, 256])
+plt.subplot(221), plt.imshow(img)
+plt.subplot(222), plt.title('Histogram'), plt.hist(img.ravel(), 256, [0, 256])
 #%%
 img = np.ones((3, 3), dtype = np.float32)
 cv2.randn(img, 0, 1)
