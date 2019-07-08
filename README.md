@@ -45,3 +45,10 @@ Repository of the digital image processing class
 ### Examples of wrong digit classifications
 
 <img src="screenshots/digit_wrong_classification.png" style=" width:100px ; height:100px " />
+
+# T04 - Cat vs Dog
+
+### Testing test.data
+
+
+<img src="screenshots/catvsdog.png" style=" width:100px ; height:100px " />
